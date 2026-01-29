@@ -10,7 +10,7 @@ RUN yarn build
 RUN rm -rf ./src ./node_modules /usr/local/lib/node_modules /usr/local/share/.cache/yarn/
 RUN mkdir -p /run/nginx
 
-FROM nginx:alpine
+FROM nginx:1.29.4-alpine3.23
 
 RUN rm -rf /usr/share/nginx/html/*
 
